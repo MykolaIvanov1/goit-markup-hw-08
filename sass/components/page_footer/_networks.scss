@@ -1,0 +1,33 @@
+.footer-network {
+  margin-left: 87px;
+  display: block;
+}
+
+.text-join {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $color-text-hero;
+}
+
+.list-footer-network {
+  display: inline-flex;
+  justify-content: space-evenly;
+  margin-top: 20px;
+}
+
+.items-icon-footer {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 25px;
+  margin-right: 10px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.network-icon-footer {
+  fill: $color-text-hero;
+}

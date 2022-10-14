@@ -1,0 +1,59 @@
+.footer {
+  background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer-container {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer__logo {
+  font-family: $logo;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  color: $color-text-hero;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.footer__web {
+  color: $accent-color;
+}
+
+.address {
+  font-style: normal;
+  margin-top: 20px;
+}
+
+.location {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: $color-text-hero;
+  margin-bottom: 9px;
+  display: block;
+}
+
+.mail-footer {
+  display: block;
+}
+
+.item-mail-footer {
+  margin-bottom: 9px;
+}
+
+.mail-footer,
+.phone-footer {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}

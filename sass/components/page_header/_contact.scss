@@ -1,0 +1,43 @@
+.contact {
+  margin-left: auto;
+}
+
+.nav__list,
+.contact {
+  display: flex;
+}
+
+.contact__item {
+  margin-left: 50px;
+
+  &:first-child {
+    margin-left: 0;
+  }
+}
+
+.mail,
+.phone {
+  display: flex;
+  align-items: center;
+  color: $secondary-text-color;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.mail_icon {
+  width: 20px;
+  height: 12px;
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.phone_icon {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  fill: currentColor;
+}

@@ -1,0 +1,48 @@
+.work-list {
+  display: inline-flex;
+}
+
+.title-work {
+  margin-bottom: 50px;
+}
+
+.item-work-list {
+  margin-right: 30px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.title-work,
+.title-team,
+.title-company {
+  color: $primary-text-color;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.container-img-text {
+  position: relative;
+}
+
+.text-works {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 370px;
+  height: 70px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $color-text-hero;
+  background: rgba(47, 48, 58, 0.8);
+}
