@@ -1,5 +1,8 @@
 body {
   font-family: "Roboto", sans-serif;
+  width: 480px;
+  margin-right: auto;
+  margin-right: auto;
 }
 
 h1,
@@ -28,7 +31,6 @@ img {
 }
 
 .container {
-  width: 1200px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
@@ -36,8 +38,8 @@ img {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .main-header {
@@ -45,13 +47,25 @@ img {
   border-bottom: 1px solid #ececec;
 }
 
-.nav,
-.container.header {
-  display: flex;
-  align-items: center;
+.menu-button {
+  display: inline-flex;
+  padding: 0;
+  margin: 0;
+  border: none;
+  background-color: transparent;
+}
+.menu-button .icon-close-40px {
+  display: none;
+}
+.menu-button.is-open .icon-close-40px {
+  display: block;
+}
+.menu-button.is-open .icon-menu-40px {
+  display: none;
 }
 
 .nav__logo {
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
@@ -150,8 +164,8 @@ img {
 
 .list-btn {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
 }
 
 .item-btn {
@@ -159,6 +173,12 @@ img {
 }
 .item-btn:last-child {
   margin-right: 0;
+}
+.item-btn:nth-child(3) {
+  margin-right: 50px;
+}
+.item-btn:nth-child(4), .item-btn:nth-child(5) {
+  margin-top: 15px;
 }
 
 .btn {
@@ -253,21 +273,17 @@ img {
 }
 
 .title-team {
-  margin-bottom: 50px;
-}
-
-.team-list {
-  display: flex;
+  margin-bottom: 30px;
 }
 
 .item-team-list {
-  margin-right: 30px;
+  margin-bottom: 30px;
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 .item-team-list:last-child {
-  margin-right: 0;
+  margin-bottom: 0;
 }
 
 .container-text {
@@ -293,7 +309,7 @@ img {
 
 .networks {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   margin-top: 16px;
 }
 
@@ -340,6 +356,7 @@ img {
 }
 
 .footer__logo {
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;

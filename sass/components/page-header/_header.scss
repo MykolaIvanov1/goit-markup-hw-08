@@ -1,0 +1,30 @@
+.main-header {
+  background-color: $color-text-hero;
+  border-bottom: 1px solid #ececec;
+}
+
+// .nav,
+// .container.header {
+//   display: flex;
+//   align-items: center;
+// }
+
+.menu-button {
+  display: inline-flex;
+  padding: 0;
+  margin: 0;
+  border: none;
+  background-color: transparent;
+
+  & .icon-close-40px {
+    display: none;
+  }
+
+  &.is-open .icon-close-40px {
+    display: block;
+  }
+
+  &.is-open .icon-menu-40px {
+    display: none;
+  }
+}

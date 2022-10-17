@@ -1,5 +1,5 @@
 .hero {
-  max-width: 1600px;
+  width: 480px;
   background-color: #2f303a;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../imeges/back.jpg);
@@ -8,21 +8,32 @@
   background-position: center;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding: 118px 60px;
 }
 
-.hero__title {
+.hero_container {
   color: $color-text-hero;
-  max-width: 696px;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 16px;
+  line-height: 1.61;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   margin-left: auto;
   margin-right: auto;
+}
+
+.hero__title {
+  // color: $color-text-hero;
+  // width: 480px;
+  // font-weight: 900;
+  // font-size: 26px;
+  // line-height: 1.61;
+  // text-align: center;
+  // letter-spacing: 0.06em;
+  // text-transform: uppercase;
+  // margin-left: auto;
+  // margin-right: auto;
 }
 
 .hero__button {
