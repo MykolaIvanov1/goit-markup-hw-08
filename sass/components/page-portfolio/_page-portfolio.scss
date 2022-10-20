@@ -1,7 +1,28 @@
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 .list-image {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
+  @media screen and (min-width: $table) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+}
+
+.item-image {
+  margin-bottom: 30px;
+
+  @media screen and (min-width: $table) {
+    flex-basis: calc((100% - 30px) / 2);
+    margin-bottom: 0;
+  }
+
+  @media screen and (min-width: $desktop) {
+    flex-basis: calc((100% - 60px) / 3);
+  }
 }
 
 .title-text {
@@ -26,7 +47,10 @@
 }
 
 .link-portfolio {
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,

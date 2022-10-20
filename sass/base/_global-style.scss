@@ -26,6 +26,7 @@ p {
 
 img {
   display: block;
+  margin: 0;
 }
 
 .lists {
@@ -69,4 +70,11 @@ img {
     padding-top: 94px;
     padding-bottom: 94px;
   }
+}
+
+.img-team,
+.img-work {
+  display: block;
+  width: 100%;
+  height: auto;
 }

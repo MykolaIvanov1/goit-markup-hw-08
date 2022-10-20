@@ -5,9 +5,16 @@
 }
 
 .footer-container {
-  text-align: center;
-  // display: flex;
-  // align-items: baseline;
+  @media screen and (max-width: $desktop) {
+    text-align: center;
+  }
+
+  @media screen and (min-width: $table) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: baseline;
+  }
 }
 
 .conttainer-address {
@@ -28,7 +35,13 @@
     color: $accent-color;
   }
 
-  // font-size: 26px;
+  @media screen and (min-width: $table) {
+    font-size: 24px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    font-size: 26px;
+  }
 }
 
 .footer__web {

@@ -3,13 +3,27 @@
 }
 
 .company-lists {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
+  @media screen and (max-width: $desktop) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    gap: 30px;
+  }
 }
 
 .item-company {
   flex-basis: calc((100% - 30px) / 2);
+
+  @media screen and (min-width: $table) {
+    flex-basis: calc((100% - 60px) / 3);
+  }
+
+  @media screen and (min-width: $desktop) {
+    flex-basis: calc((100% - 150px) / 6);
+  }
 }
 
 .link-company {

@@ -17,8 +17,23 @@
     <!--header-->
     <header class="main-header">
       <div class="container header">
-        <nav class="nav">
+        <div class="logo-button">
           <a class="nav__logo link" href="" lang="en"><span class="nav__web">Web</span>Studio</a>
+          <button
+            class="menu-button-open is-open js-open-menu"
+            type="button"
+            aria-expanded="false"
+            aria-controls="mobile-menu">
+            <svg
+              class="icon-menu-40px"
+              width="40px"
+              height="40px"
+              aria-label="Відкриває мобільне меню">
+              <use class="icon-menu-40px" href="./imeges/icons.svg#icon-menu-40px"></use>
+            </svg>
+          </button>
+        </div>
+        <nav class="nav">
           <ul class="nav__list lists">
             <li class="nav__item">
               <a class="nav__link link" href="./index.html">Студія</a>
@@ -38,7 +53,7 @@
               href="mailto:info@devstudio.com"
               target="_blank"
               rel="noopener nofollow noreferrer">
-              <svg class="mail_icon">
+              <svg class="mail_icon" width="14px" height="10px">
                 <use href="./imeges/icons.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com
@@ -46,13 +61,68 @@
           </li>
           <li class="contact__item">
             <a class="phone link" href="tel:+380961111111">
-              <svg class="phone_icon">
+              <svg class="phone_icon" width="10px" height="14px">
                 <use href="./imeges/icons.svg#icon-smartphone"></use>
               </svg>
               +38 096 111 11 11
             </a>
           </li>
         </ul>
+      </div>
+
+      <div class="container-menu is-open js-menu-container" id="mobile-menu">
+        <button class="menu-button-close js-close-menu" type="button">
+          <svg
+            class="icon-close-40px"
+            width="40px"
+            height="40px"
+            aria-label="Закриває мобільне меню">
+            <use href="./imeges/icons.svg#icon-close-40px"></use>
+          </svg>
+        </button>
+        <nav class="nav-menu">
+          <ul class="nav-menu__list lists">
+            <li class="nav-menu__item">
+              <a class="nav-menu__link link" href="./index.html">Студія</a>
+            </li>
+            <li class="nav-menu__item">
+              <a class="nav-menu__link link current-menu" href="./portfolio.html">Портфоліо</a>
+            </li>
+            <li class="nav-menu__item">
+              <a class="nav-menu__link link" href="">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="container-contact">
+          <ul class="contact-menu lists">
+            <li class="contact-menu__item">
+              <a class="contact-menu_phone link" href="tel:+380961111111"> +38 096 111 11 11 </a>
+            </li>
+            <li class="contact-menu__item">
+              <a
+                class="contact-menu_mail link"
+                href="mailto:info@devstudio.com"
+                target="_blank"
+                rel="noopener nofollow noreferrer">
+                info@devstudio.com
+              </a>
+            </li>
+          </ul>
+          <ul class="network-menu lists">
+            <li class="network-menu__item">
+              <a href="" class="network-menu_link link">Instagram</a>
+            </li>
+            <li class="network-menu__item">
+              <a href="" class="network-menu_link link">Twitter</a>
+            </li>
+            <li class="network-menu__item">
+              <a href="" class="network-menu_link link">Facebook</a>
+            </li>
+            <li class="network-menu__item">
+              <a href="" class="network-menu_link link">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <!-- main -->
@@ -83,9 +153,12 @@
                 ><div class="container-overlay">
                   <img
                     src="./imeges/portfolio/technocrat.jpg"
-                    alt="ноутбук із зображенням веб сторінки"
-                    width="370"
-                    height="294" />
+                    srcset="
+                      ./imeges/portfolio/technocrat.jpg        320w,
+                      ./imeges/portfolio/img@2x-technocrat.jpg 640w
+                    "
+                    sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
+                    alt="ноутбук із зображенням веб сторінки" />
                   <div class="container-overlay-text">
                     <p class="overlay-text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -105,9 +178,12 @@
                 ><div class="container-overlay">
                   <img
                     src="./imeges/portfolio/new-orlean.jpg"
-                    alt="два баскетболісти борються за м'яч"
-                    width="370"
-                    height="294" />
+                    srcset="
+                      ./imeges/portfolio/new-orlean.jpg        320w,
+                      ./imeges/portfolio/img@2x-new-orlean.jpg 640w
+                    "
+                    sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
+                    alt="два баскетболісти борються за м'яч" />
                   <div class="container-overlay-text">
                     <p class="overlay-text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -127,9 +203,12 @@
                 ><div class="container-overlay">
                   <img
                     src="./imeges/portfolio/seafood.jpg"
-                    alt="логотип ресторану Seafood"
-                    width="370"
-                    height="294" />
+                    srcset="
+                      ./imeges/portfolio/seafood.jpg        320w,
+                      ./imeges/portfolio/img@2x-seafood.jpg 640w
+                    "
+                    sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
+                    alt="логотип ресторану Seafood" />
                   <div class="container-overlay-text">
                     <p class="overlay-text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -149,9 +228,12 @@
                 ><div class="container-overlay">
                   <img
                     src="./imeges/portfolio/prime.jpg"
+                    srcset="
+                      ./imeges/portfolio/prime.jpg        320w,
+                      ./imeges/portfolio/img@2x-prime.jpg 640w
+                    "
                     alt="навушники"
-                    width="370"
-                    height="294" />
+                    sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" />
                   <div class="container-overlay-text">
                     <p class="overlay-text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -171,9 +253,12 @@
                 ><div class="container-overlay">
                   <img
                     src="./imeges/portfolio/boxes.jpg"
-                    alt="дві коробки"
-                    width="370"
-                    height="294" />
+                    srcset="
+                      ./imeges/portfolio/boxes.jpg        320w,
+                      ./imeges/portfolio/img@2x-boxes.jpg 640w
+                    "
+                    sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
+                    alt="дві коробки" />
                   <div class="container-overlay-text">
                     <p class="overlay-text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -193,9 +278,12 @@
                 ><div class="container-overlay">
                   <img
                     src="./imeges/portfolio/inspiration-has-no-borders.jpg"
-                    alt="монітор"
-                    width="370"
-                    height="294" />
+                    srcset="
+                      ./imeges/portfolio/inspiration-has-no-borders.jpg        320w,
+                      ./imeges/portfolio/img@2x-inspiration-has-no-borders.jpg
+                    "
+                    sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
+                    alt="монітор" />
                   <div class="container-overlay-text">
                     <p class="overlay-text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -215,9 +303,12 @@
                 ><div class="container-overlay">
                   <img
                     src="./imeges/portfolio/limited-edition.jpg"
+                    srcset="
+                      ./imeges/portfolio/limited-edition.jpg        320w,
+                      ./imeges/portfolio/img@2x-limited-edition.jpg 640w
+                    "
                     alt="відкритий журнал"
-                    width="370"
-                    height="294" />
+                    sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" />
                   <div class="container-overlay-text">
                     <p class="overlay-text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -237,9 +328,12 @@
                 ><div class="container-overlay">
                   <img
                     src="./imeges/portfolio/project-lab.jpg"
-                    alt="ярлик з текстом"
-                    width="370"
-                    height="294" />
+                    srcset="
+                      ./imeges/portfolio/project-lab.jpg        320w,
+                      ./imeges/portfolio/img@2x-project-lab.jpg 640w
+                    "
+                    sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
+                    alt="ярлик з текстом" />
                   <div class="container-overlay-text">
                     <p class="overlay-text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -259,9 +353,12 @@
                 ><div class="container-overlay">
                   <img
                     src="./imeges/portfolio/growing-business.jpg"
+                    srcset="
+                      ./imeges/portfolio/growing-business.jpg        320w,
+                      ./imeges/portfolio/img@2x-growing-business.jpg 640w
+                    "
                     alt="відкритий ноутбук за яким працює людина"
-                    width="370"
-                    height="294" />
+                    sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" />
                   <div class="container-overlay-text">
                     <p class="overlay-text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -283,7 +380,7 @@
     <!-- footer -->
     <footer class="footer">
       <div class="container footer-container">
-        <div>
+        <div class="conttainer-address">
           <a class="footer__logo link" href="" lang="en">
             <span class="footer__web">Web</span>Studio
           </a>
@@ -358,5 +455,11 @@
         </form>
       </div>
     </footer>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>
