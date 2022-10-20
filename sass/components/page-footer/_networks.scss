@@ -1,6 +1,10 @@
 .footer-network {
-  margin-left: 87px;
   display: block;
+  margin-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 87px;
+  }
 }
 
 .text-join {

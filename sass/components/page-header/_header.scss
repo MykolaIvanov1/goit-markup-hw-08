@@ -3,28 +3,32 @@
   border-bottom: 1px solid #ececec;
 }
 
-// .nav,
-// .container.header {
-//   display: flex;
-//   align-items: center;
-// }
+.nav,
+.container.header {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+  }
+}
 
-.menu-button {
-  display: inline-flex;
+.menu-button-open {
+  display: flex;
   padding: 0;
   margin: 0;
+  margin-left: auto;
   border: none;
   background-color: transparent;
 
-  & .icon-close-40px {
+  @media screen and (min-width: 768px) {
     display: none;
   }
+}
 
-  &.is-open .icon-close-40px {
-    display: block;
-  }
+.icon-menu-40px {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
-  &.is-open .icon-menu-40px {
-    display: none;
-  }
+.icon-menu-40px:hover,
+.icon-menu-40px:focus {
+  fill: $accent-color;
 }

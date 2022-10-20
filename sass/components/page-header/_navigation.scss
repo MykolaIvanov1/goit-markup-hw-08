@@ -1,5 +1,13 @@
 // Logo
 
+.logo-button {
+  @media screen and (max-width: 768px) {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+  }
+}
+
 .nav__logo {
   font-family: $logo;
   font-weight: 700;

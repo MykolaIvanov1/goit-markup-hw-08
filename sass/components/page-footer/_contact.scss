@@ -5,14 +5,19 @@
 }
 
 .footer-container {
-  display: flex;
-  align-items: baseline;
+  text-align: center;
+  // display: flex;
+  // align-items: baseline;
+}
+
+.conttainer-address {
+  margin-bottom: 60px;
 }
 
 .footer__logo {
   font-family: $logo;
   font-weight: 700;
-  font-size: 26px;
+  font-size: 24px;
   line-height: 1.2;
   letter-spacing: 0.03em;
   color: $color-text-hero;
@@ -22,6 +27,8 @@
   &:focus {
     color: $accent-color;
   }
+
+  // font-size: 26px;
 }
 
 .footer__web {

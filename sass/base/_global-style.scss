@@ -1,8 +1,18 @@
 body {
   font-family: $font-family;
-  width: 480px;
-  margin-right: auto;
-  margin-right: auto;
+  min-width: $mobile;
+
+  @media screen and (min-width: $table) {
+    min-width: $table;
+  }
+
+  @media screen and (min-width: $desktop) {
+    min-width: $desktop;
+  }
+}
+
+.no-scroll {
+  overflow: hidden;
 }
 
 h1,
@@ -37,9 +47,26 @@ img {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+
+  @media screen and (min-width: $mobile) {
+    width: $mobile;
+  }
+
+  @media screen and (min-width: $table) {
+    width: $table;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 1200px;
+  }
 }
 
 .section {
   padding-top: 60px;
   padding-bottom: 60px;
+
+  @media screen and (min-width: $desktop) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }

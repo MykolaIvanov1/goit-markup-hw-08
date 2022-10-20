@@ -19,47 +19,109 @@
     <!--header-->
     <header class="main-header">
       <div class="container header">
-        <a class="nav__logo link" href="" lang="en"><span class="nav__web">Web</span>Studio</a>
-        <div>
-          <button class="menu-button is-open" type="button" js-menu-container>
-            <svg width="40px" height="40px" aria-label="Перемикач мобільного меню">
-              <use class="icon-close-40px" href="./imeges/icons.svg#icon-close-40px"></use>
+        <div class="logo-button">
+          <a class="nav__logo link" href="" lang="en"><span class="nav__web">Web</span>Studio</a>
+          <button
+            class="menu-button-open is-open js-open-menu"
+            type="button"
+            aria-expanded="false"
+            aria-controls="mobile-menu">
+            <svg
+              class="icon-menu-40px"
+              width="40px"
+              height="40px"
+              aria-label="Відкриває мобільне меню">
               <use class="icon-menu-40px" href="./imeges/icons.svg#icon-menu-40px"></use>
             </svg>
           </button>
-          <nav class="nav">
-            <ul class="nav__list lists">
-              <li class="nav__item">
-                <a class="nav__link link current" href="./index.html">Студія</a>
-              </li>
-              <li class="nav__item">
-                <a class="nav__link link" href="./portfolio.html">Портфоліо</a>
-              </li>
-              <li class="nav__item">
-                <a class="nav__link link" href="">Контакти</a>
-              </li>
-            </ul>
-          </nav>
-          <ul class="contact lists">
-            <li class="contact__item">
+        </div>
+        <nav class="nav">
+          <ul class="nav__list lists">
+            <li class="nav__item">
+              <a class="nav__link link current" href="./index.html">Студія</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link link" href="./portfolio.html">Портфоліо</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link link" href="">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="contact lists">
+          <li class="contact__item">
+            <a
+              class="mail link"
+              href="mailto:info@devstudio.com"
+              target="_blank"
+              rel="noopener nofollow noreferrer">
+              <svg class="mail_icon" width="14px" height="10px">
+                <use href="./imeges/icons.svg#icon-envelope"></use>
+              </svg>
+              info@devstudio.com
+            </a>
+          </li>
+          <li class="contact__item">
+            <a class="phone link" href="tel:+380961111111">
+              <svg class="phone_icon" width="10px" height="14px">
+                <use href="./imeges/icons.svg#icon-smartphone"></use>
+              </svg>
+              +38 096 111 11 11
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="container-menu is-open js-menu-container" id="mobile-menu">
+        <button class="menu-button-close js-close-menu" type="button">
+          <svg
+            class="icon-close-40px"
+            width="40px"
+            height="40px"
+            aria-label="Закриває мобільне меню">
+            <use href="./imeges/icons.svg#icon-close-40px"></use>
+          </svg>
+        </button>
+        <nav class="nav-menu">
+          <ul class="nav-menu__list lists">
+            <li class="nav-menu__item">
+              <a class="nav-menu__link link current-menu" href="./index.html">Студія</a>
+            </li>
+            <li class="nav-menu__item">
+              <a class="nav-menu__link link" href="./portfolio.html">Портфоліо</a>
+            </li>
+            <li class="nav-menu__item">
+              <a class="nav-menu__link link" href="">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="container-contact">
+          <ul class="contact-menu lists">
+            <li class="contact-menu__item">
+              <a class="contact-menu_phone link" href="tel:+380961111111"> +38 096 111 11 11 </a>
+            </li>
+            <li class="contact-menu__item">
               <a
-                class="mail link"
+                class="contact-menu_mail link"
                 href="mailto:info@devstudio.com"
                 target="_blank"
                 rel="noopener nofollow noreferrer">
-                <svg class="mail_icon">
-                  <use href="./imeges/icons.svg#icon-envelope"></use>
-                </svg>
                 info@devstudio.com
               </a>
             </li>
-            <li class="contact__item">
-              <a class="phone link" href="tel:+380961111111">
-                <svg class="phone_icon">
-                  <use href="./imeges/icons.svg#icon-smartphone"></use>
-                </svg>
-                +38 096 111 11 11
-              </a>
+          </ul>
+          <ul class="network-menu lists">
+            <li class="network-menu__item">
+              <a href="" class="network-menu_link link">Instagram</a>
+            </li>
+            <li class="network-menu__item">
+              <a href="" class="network-menu_link link">Twitter</a>
+            </li>
+            <li class="network-menu__item">
+              <a href="" class="network-menu_link link">Facebook</a>
+            </li>
+            <li class="network-menu__item">
+              <a href="" class="network-menu_link link">LinkedIn</a>
             </li>
           </ul>
         </div>
@@ -365,7 +427,7 @@
     <!--footer-->
     <footer class="footer">
       <div class="container footer-container">
-        <div>
+        <div class="conttainer-address">
           <a class="footer__logo link" href="" lang="en">
             <span class="footer__web">Web</span>Studio
           </a>
@@ -496,6 +558,11 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
-    <script src="./js/mobile-menu.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>

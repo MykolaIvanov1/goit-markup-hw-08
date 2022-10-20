@@ -1,18 +1,23 @@
 .email-input {
-  display: flex;
-  align-items: flex-end;
-  justify-content: flex-end;
-  margin-left: 100px;
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin-left: 100px;
+  }
 }
 
 .label {
-  display: flex;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: $color-text-hero;
+
+  @media screen and (min-width: $desktop) {
+    display: flex;
+  }
 }
 
 .input {
@@ -21,9 +26,10 @@
   line-height: 1.25;
   letter-spacing: 0.03em;
 
-  width: 358px;
+  width: 99%;
   height: 50px;
   margin-top: 20px;
+  margin-bottom: 20px;
   padding-left: 16px;
   color: rgba(255, 255, 255, 0.6);
   background-color: #2f303a;
@@ -38,6 +44,10 @@
     line-height: 1.25;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 358px;
   }
 }
 
@@ -57,7 +67,7 @@
   background-color: $accent-color;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  border: 0;
+  border: none;
   cursor: pointer;
 }
 
