@@ -391,12 +391,12 @@ img {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../imeges/img@2x-table.jpg);
   }
 }
-@media (min-width: 768px) and (min-width: 1200px) {
+@media (min-width: 1200px) {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../imeges/desktop.jpg);
   }
 }
-@media (min-width: 768px) and (min-width: 1200px) and (min-device-pixel-ratio: 2), (min-width: 768px) and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (min-width: 1200px) and (min-resolution: 192dpi), (min-width: 768px) and (min-width: 1200px) and (min-resolution: 2dppx) {
+@media (min-width: 1200px) and (min-device-pixel-ratio: 2), (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1200px) and (min-resolution: 192dpi), (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../imeges/Img@2x-desktop.jpg);
   }
