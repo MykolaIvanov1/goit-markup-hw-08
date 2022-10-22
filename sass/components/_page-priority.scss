@@ -1,5 +1,6 @@
 .section-priority {
   padding-top: 94px;
+
   @media screen and (max-width: $desktop) {
     padding: 60px 0;
   }
@@ -67,11 +68,14 @@
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
-  text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: $primary-text-color;
   margin-bottom: 10px;
+
+  @media screen and (max-width: $table) {
+    text-align: center;
+  }
 }
 
 .text-priority {

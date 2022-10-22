@@ -20,7 +20,8 @@
   }
 
   @media (min-width: $table) {
-    padding: 118px 204px;
+    padding-top: 118px;
+    padding-bottom: 118px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url(../imeges/table.jpg);
 
@@ -34,6 +35,8 @@
   }
 
   @media (min-width: $desktop) {
+    padding-top: 200px;
+    padding-bottom: 200px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url(../imeges/desktop.jpg);
 
@@ -63,6 +66,12 @@
   text-transform: uppercase;
   margin-left: auto;
   margin-right: auto;
+
+  @media screen and (min-width: $desktop) {
+    max-width: 696px;
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 .hero__button {

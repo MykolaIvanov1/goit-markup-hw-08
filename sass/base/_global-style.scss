@@ -72,9 +72,12 @@ img {
   }
 }
 
-.img-team,
 .img-work {
   display: block;
-  width: 100%;
+  max-width: 100%;
   height: auto;
+}
+
+.img-team {
+  width: 100%;
 }

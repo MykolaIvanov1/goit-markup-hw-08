@@ -18,7 +18,9 @@
 }
 
 .conttainer-address {
-  margin-bottom: 60px;
+  @media screen and (max-width: $desktop) {
+    margin-bottom: 60px;
+  }
 }
 
 .footer__logo {

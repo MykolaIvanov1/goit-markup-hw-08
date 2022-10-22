@@ -1,5 +1,5 @@
 .email-input {
-  @media screen and (min-width: $table) {
+  @media screen and (min-width: $desktop) {
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
@@ -46,7 +46,7 @@
     color: rgba(255, 255, 255, 0.6);
   }
 
-  @media screen and (min-width: $table) {
+  @media screen and (min-width: $desktop) {
     margin-bottom: 0;
   }
 
