@@ -1,14 +1,14 @@
 body {
   font-family: $font-family;
-  min-width: $mobile;
+  // min-width: $mobile;
 
-  @media screen and (min-width: $table) {
-    min-width: $table;
-  }
+  // @media screen and (min-width: $table) {
+  //   min-width: $table;
+  // }
 
-  @media screen and (min-width: $desktop) {
-    min-width: $desktop;
-  }
+  // @media screen and (min-width: $desktop) {
+  //   min-width: $desktop;
+  // }
 }
 
 .no-scroll {

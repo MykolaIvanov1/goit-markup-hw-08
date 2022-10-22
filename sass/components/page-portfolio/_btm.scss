@@ -14,33 +14,13 @@
 .list-btn {
   display: flex;
   flex-wrap: wrap;
+  justify-content: left;
+  gap: 8px;
   margin-bottom: 40px;
 
   @media screen and (min-width: $table) {
     justify-content: center;
     margin-bottom: 50px;
-  }
-}
-
-.item-btn {
-  @media screen and (max-width: $table) {
-    margin-right: 8px;
-    &:last-child {
-      margin-right: 0;
-    }
-    &:nth-child(3) {
-      margin-right: 50px;
-    }
-    &:nth-child(4),
-    &:nth-child(5) {
-      margin-top: 15px;
-    }
-  }
-  @media screen and (min-width: $table) {
-    margin-right: 8px;
-    &:last-child {
-      margin-right: 0;
-    }
   }
 }
 

@@ -9,7 +9,7 @@
   background-position: center;
   margin-left: auto;
   margin-right: auto;
-  padding: 118px 60px;
+  padding: 118px 15px;
 
   @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
@@ -56,17 +56,17 @@
 }
 
 .hero__title {
-  color: $color-text-hero;
   max-width: 360px;
+  margin-left: auto;
+  margin-right: auto;
   font-weight: 900;
   font-size: 26px;
   line-height: 1.61;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  margin-left: auto;
-  margin-right: auto;
 
+  color: $color-text-hero;
   @media screen and (min-width: $desktop) {
     max-width: 696px;
     font-size: 44px;
