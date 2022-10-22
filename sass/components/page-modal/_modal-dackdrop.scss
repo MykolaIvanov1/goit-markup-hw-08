@@ -23,13 +23,17 @@
   left: 50%;
   transform: rotate(0) translate(-50%, -50%) scale(1);
 
-  width: 450px;
+  width: calc(100% - 30px);
   padding: 40px;
 
   background-color: $color-text-hero;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+
+  @media screen and (min-width: $mobile) {
+    width: 450px;
+  }
 
   @media screen and (min-width: $table) {
     width: 528px;
@@ -38,14 +42,12 @@
 
 .button-modal {
   position: absolute;
-  right: 0;
-  top: 0;
+  right: 8px;
+  top: 8px;
   display: block;
   width: 30px;
   height: 30px;
   padding: 5px;
-  margin-right: 8px;
-  margin-top: 8px;
   background: #ffffff;
   outline: none;
   cursor: pointer;
