@@ -78,11 +78,15 @@
 .agreement {
   display: inline-flex;
   align-items: center;
+  color: #757575;
+  cursor: pointer;
+}
+
+.agreement__text {
+  margin-bottom: 0;
   font-size: 12px;
   line-height: 1;
   letter-spacing: 0.03em;
-  color: #757575;
-  cursor: pointer;
 
   @media screen and (min-width: $desktop) {
     font-size: 14px;
