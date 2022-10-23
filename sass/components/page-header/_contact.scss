@@ -49,7 +49,7 @@
 }
 
 .mail {
-  @media screen and (min-width: $table) {
+  @media screen and (max-width: $desktop) {
     margin-bottom: 10px;
   }
 }

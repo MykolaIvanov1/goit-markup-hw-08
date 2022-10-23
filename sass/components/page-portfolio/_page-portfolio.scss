@@ -27,6 +27,7 @@ img {
 
 .title-text {
   padding: 20px 24px;
+  flex-grow: 1;
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
@@ -92,4 +93,8 @@ img {
   line-height: 1.55;
   letter-spacing: 0.03em;
   color: $color-text-hero;
+
+  @media screen and (max-width: $mobile) {
+    font-size: 16px;
+  }
 }
